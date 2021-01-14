@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qI0-fb-d1Q">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="nee-ab-XOv">
+            <objects>
+                <navigationController storyboardIdentifier="Assignments" automaticallyAdjustsScrollViewInsets="NO" id="qI0-fb-d1Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="baseline_assignment_white_48pt" id="M1O-tc-Tkm">
+                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="kTf-8o-E3s">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="barTintColor" red="0.15410047769999999" green="0.41306763889999998" blue="0.69063264130000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cx4-pE-ZVO" kind="relationship" relationship="rootViewController" id="qxK-oi-zWC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9w-Ba-m1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647.2" y="13.943028485757123"/>
+        </scene>
+        <!--Snapizer Home-->
+        <scene sceneID="1Xg-5F-UDR">
+            <objects>
+                <viewController id="cx4-pE-ZVO" customClass="SnapizerHomeVC" customModule="myHSC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="stl-e8-k7o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gle-fJ-fA3">
+                                <rect key="frame" x="20" y="8" width="109" height="30"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.2784313725" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="W1B-CU-IjJ"/>
+                                    <constraint firstAttribute="width" constant="109" id="kJp-Ft-fnj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Snap">
+                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="P1h-ID-zsO" kind="show" id="msh-PI-RsR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGl-yp-nwR" customClass="MDCCard">
+                                <rect key="frame" x="5" y="63" width="172" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pre-AP Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbk-YE-4y9">
+                                        <rect key="frame" x="8" y="8" width="162" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6K-cL-On1">
+                                        <rect key="frame" x="51" y="33" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="hQ1-e2-3cQ"/>
+                                    <constraint firstAttribute="height" constant="73" id="t3w-mr-qBO"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QSR-RY-NES" appends="YES" id="tgD-nE-jQC"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIr-0g-jG2" customClass="MDCCard">
+                                <rect key="frame" x="237" y="63" width="172" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pre-AP Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rC3-q1-CxV">
+                                        <rect key="frame" x="8" y="8" width="162" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tee-Sm-0sz">
+                                        <rect key="frame" x="51" y="33" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="Jlp-Y0-zRq"/>
+                                    <constraint firstAttribute="width" constant="172" id="V5V-37-gZt"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MIh-ib-Vek" appends="YES" id="4ak-mM-jpY"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7T-Vo-FSN" customClass="MDCCard">
+                                <rect key="frame" x="5" y="154" width="172" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pre-AP Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kW-Hh-xtO">
+                                        <rect key="frame" x="8" y="8" width="162" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvu-3M-bjh">
+                                        <rect key="frame" x="51" y="33" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="MnX-Uw-eic"/>
+                                    <constraint firstAttribute="height" constant="73" id="eq3-np-TzP"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="b6L-KP-n0f" appends="YES" id="a9r-Of-XT6"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwB-So-7Sc" customClass="MDCCard">
+                                <rect key="frame" x="5" y="245" width="172" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pre-AP Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFu-2m-4MQ">
+                                        <rect key="frame" x="8" y="8" width="162" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcu-6L-hms">
+                                        <rect key="frame" x="51" y="33" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="RB3-RN-uer"/>
+                                    <constraint firstAttribute="width" constant="172" id="rGm-9I-b3M"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="41L-MS-hBq" appends="YES" id="b7q-TQ-fmt"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBE-P9-aaj" customClass="MDCCard">
+                                <rect key="frame" x="237" y="245" width="172" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pre-AP Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5L-gD-PNb">
+                                        <rect key="frame" x="8" y="8" width="162" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwH-3b-Y1d">
+                                        <rect key="frame" x="51" y="33" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="HkJ-gj-Yuc"/>
+                                    <constraint firstAttribute="height" constant="73" id="orb-Rl-k4G"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3d7-fu-zXZ" appends="YES" id="uCR-dv-GVy"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ld3-Xr-mM0" customClass="MDCCard">
+                                <rect key="frame" x="5" y="336" width="172" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pre-AP Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEN-Ut-tHt">
+                                        <rect key="frame" x="8" y="8" width="162" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jth-Es-PHA">
+                                        <rect key="frame" x="51" y="33" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="UPW-kw-MHd"/>
+                                    <constraint firstAttribute="width" constant="172" id="df3-lr-JgU"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="v3D-ml-bSG" appends="YES" id="P4i-P1-DnO"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsj-P3-Nfe" customClass="MDCCard">
+                                <rect key="frame" x="237" y="336" width="172" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pre-AP Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bua-Ae-Ldd">
+                                        <rect key="frame" x="8" y="8" width="162" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-sZ-3Hl">
+                                        <rect key="frame" x="51" y="33" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="LAd-1b-AER"/>
+                                    <constraint firstAttribute="width" constant="172" id="e3q-4O-bAY"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Z48-d7-T0H" appends="YES" id="SEd-y4-97t"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-bp-p3A" customClass="MDCCard">
+                                <rect key="frame" x="237" y="154" width="172" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pre-AP Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcx-lx-Of2">
+                                        <rect key="frame" x="8" y="8" width="162" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cp-jc-fXS">
+                                        <rect key="frame" x="51" y="33" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="KVp-21-euZ"/>
+                                    <constraint firstAttribute="width" constant="172" id="Xbx-DH-mqa"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VOf-4X-27T" appends="YES" id="um5-ST-GZD"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96471232175827026" green="0.9646943211555481" blue="0.96470648050308228" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ATK-xr-HBQ" firstAttribute="trailing" secondItem="XIr-0g-jG2" secondAttribute="trailing" constant="5" id="2tc-ej-D0I"/>
+                            <constraint firstItem="d7T-Vo-FSN" firstAttribute="leading" secondItem="ATK-xr-HBQ" secondAttribute="leading" constant="5" id="3Zc-Yt-sIJ"/>
+                            <constraint firstItem="Gle-fJ-fA3" firstAttribute="top" secondItem="ATK-xr-HBQ" secondAttribute="top" constant="8" id="8mj-yl-672"/>
+                            <constraint firstItem="eGl-yp-nwR" firstAttribute="leading" secondItem="ATK-xr-HBQ" secondAttribute="leading" constant="5" id="CaV-L3-t12"/>
+                            <constraint firstItem="qsj-P3-Nfe" firstAttribute="top" secondItem="lBE-P9-aaj" secondAttribute="bottom" constant="18" id="Ddl-Ag-CjO"/>
+                            <constraint firstItem="ld3-Xr-mM0" firstAttribute="leading" secondItem="ATK-xr-HBQ" secondAttribute="leading" constant="5" id="FDE-QJ-yHT"/>
+                            <constraint firstItem="eGl-yp-nwR" firstAttribute="top" secondItem="Gle-fJ-fA3" secondAttribute="bottom" constant="25" id="FVN-4K-Hmw"/>
+                            <constraint firstItem="ld3-Xr-mM0" firstAttribute="top" secondItem="hwB-So-7Sc" secondAttribute="bottom" constant="18" id="Nhd-rD-F3j"/>
+                            <constraint firstItem="ATK-xr-HBQ" firstAttribute="trailing" secondItem="lBE-P9-aaj" secondAttribute="trailing" constant="5" id="Nx0-xT-ZjY"/>
+                            <constraint firstItem="hwB-So-7Sc" firstAttribute="leading" secondItem="ATK-xr-HBQ" secondAttribute="leading" constant="5" id="UfB-Uu-JGb"/>
+                            <constraint firstItem="ATK-xr-HBQ" firstAttribute="trailing" secondItem="qsj-P3-Nfe" secondAttribute="trailing" constant="5" id="ZZi-JS-RY2"/>
+                            <constraint firstItem="XoA-bp-p3A" firstAttribute="top" secondItem="XIr-0g-jG2" secondAttribute="bottom" constant="18" id="Zpc-x7-Gcf"/>
+                            <constraint firstItem="ATK-xr-HBQ" firstAttribute="trailing" secondItem="XoA-bp-p3A" secondAttribute="trailing" constant="5" id="bxT-xe-Zai"/>
+                            <constraint firstItem="XIr-0g-jG2" firstAttribute="top" secondItem="ATK-xr-HBQ" secondAttribute="top" constant="63" id="cbT-Ll-SQw"/>
+                            <constraint firstItem="Gle-fJ-fA3" firstAttribute="leading" secondItem="ATK-xr-HBQ" secondAttribute="leading" constant="20" id="gFb-zk-Q6x"/>
+                            <constraint firstItem="lBE-P9-aaj" firstAttribute="top" secondItem="XoA-bp-p3A" secondAttribute="bottom" constant="18" id="moO-bL-4Wd"/>
+                            <constraint firstItem="d7T-Vo-FSN" firstAttribute="top" secondItem="eGl-yp-nwR" secondAttribute="bottom" constant="18" id="sXk-rI-jwz"/>
+                            <constraint firstItem="hwB-So-7Sc" firstAttribute="top" secondItem="d7T-Vo-FSN" secondAttribute="bottom" constant="18" id="x8C-Nc-fQf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ATK-xr-HBQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Snapizer Home" id="Kla-R7-FST" userLabel="Block A Click">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="pNG-kP-O30">
+                            <connections>
+                                <action selector="back:" destination="cx4-pE-ZVO" id="ClG-fq-Son"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="AT" destination="Nbk-YE-4y9" id="LEx-lM-Sof"/>
+                        <outlet property="AU" destination="R6K-cL-On1" id="Rl5-gt-s4S"/>
+                        <outlet property="BT" destination="rC3-q1-CxV" id="SEW-Fd-nto"/>
+                        <outlet property="BU" destination="tee-Sm-0sz" id="BCn-5x-67w"/>
+                        <outlet property="CT" destination="3kW-Hh-xtO" id="rfA-ea-K8E"/>
+                        <outlet property="CU" destination="Nvu-3M-bjh" id="BWR-nw-cDY"/>
+                        <outlet property="DT" destination="Hcx-lx-Of2" id="1yh-gy-tOL"/>
+                        <outlet property="DU" destination="7cp-jc-fXS" id="SCG-Ez-vEp"/>
+                        <outlet property="ET" destination="AFu-2m-4MQ" id="ndz-Xi-jr8"/>
+                        <outlet property="EU" destination="gcu-6L-hms" id="3h0-Rc-Smx"/>
+                        <outlet property="FT" destination="G5L-gD-PNb" id="c43-U9-uF5"/>
+                        <outlet property="FU" destination="UwH-3b-Y1d" id="QQn-Ro-aOa"/>
+                        <outlet property="GT" destination="UEN-Ut-tHt" id="KEH-26-RIh"/>
+                        <outlet property="GU" destination="Jth-Es-PHA" id="L4R-y9-28d"/>
+                        <outlet property="HT" destination="bua-Ae-Ldd" id="oIj-dc-uZE"/>
+                        <outlet property="HU" destination="ZMl-sZ-3Hl" id="9fX-df-Jfq"/>
+                        <segue destination="ght-YT-zFd" kind="show" id="SBz-cm-07y"/>
+                        <segue destination="D6T-Ug-OuX" kind="show" id="wxT-yQ-Ekg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMp-2m-7Ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QSR-RY-NES" userLabel="Block A">
+                    <connections>
+                        <action selector="tapA:" destination="cx4-pE-ZVO" id="VS7-vk-7aH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="MIh-ib-Vek" userLabel="Block B">
+                    <connections>
+                        <action selector="tapB:" destination="cx4-pE-ZVO" id="Kwz-KV-5wH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="b6L-KP-n0f" userLabel="Block C">
+                    <connections>
+                        <action selector="tapC:" destination="cx4-pE-ZVO" id="waT-Vy-Wm7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VOf-4X-27T" userLabel="Block D">
+                    <connections>
+                        <action selector="tapD:" destination="cx4-pE-ZVO" id="0Ne-mk-Chz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="41L-MS-hBq" userLabel="Block E">
+                    <connections>
+                        <action selector="tapE:" destination="cx4-pE-ZVO" id="pfO-ly-XEX"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3d7-fu-zXZ" userLabel="Block F">
+                    <connections>
+                        <action selector="tapF:" destination="cx4-pE-ZVO" id="eN8-38-eEW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="v3D-ml-bSG" userLabel="Block G">
+                    <connections>
+                        <action selector="tapG:" destination="cx4-pE-ZVO" id="1OU-sn-tit"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Z48-d7-T0H" userLabel="Block H">
+                    <connections>
+                        <action selector="tapH:" destination="cx4-pE-ZVO" id="pnJ-ce-WHM"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2350.7246376811595" y="15.489130434782609"/>
+        </scene>
+        <!--Units / Topics-->
+        <scene sceneID="4Ph-7Y-NNn">
+            <objects>
+                <tableViewController storyboardIdentifier="UnitsTopics" title="Units / Topics" id="ght-YT-zFd" customClass="UnitsTopicsTVC" customModule="myHSC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WXP-fW-Igh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.99670502618855761" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="snapizerUnitCell" rowHeight="58" id="c1N-9x-mBl" customClass="snapizerUnitCell" customModule="myHSC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c1N-9x-mBl" id="L0u-Yc-yKs">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5av-8t-oYl">
+                                            <rect key="frame" x="8" y="5" width="401" height="48"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lesson 1.4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lha-87-UOa">
+                                                    <rect key="frame" x="10" y="13" width="254" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="254" id="hDe-V6-J7b"/>
+                                                        <constraint firstAttribute="height" constant="22" id="q0t-SW-8GP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="lha-87-UOa" firstAttribute="top" secondItem="5av-8t-oYl" secondAttribute="top" constant="6" id="cRE-ot-rl0"/>
+                                                <constraint firstItem="lha-87-UOa" firstAttribute="leading" secondItem="5av-8t-oYl" secondAttribute="leading" constant="8" id="oTa-nF-n5o"/>
+                                                <constraint firstAttribute="height" constant="36" id="pU7-t1-ee1"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5av-8t-oYl" firstAttribute="trailing" secondItem="L0u-Yc-yKs" secondAttribute="trailingMargin" id="1nc-Dh-EEP"/>
+                                        <constraint firstItem="5av-8t-oYl" firstAttribute="top" secondItem="L0u-Yc-yKs" secondAttribute="topMargin" id="3B2-pQ-M3S"/>
+                                        <constraint firstItem="5av-8t-oYl" firstAttribute="bottom" secondItem="L0u-Yc-yKs" secondAttribute="bottomMargin" id="cIK-Xq-Tlf"/>
+                                        <constraint firstItem="5av-8t-oYl" firstAttribute="leading" secondItem="L0u-Yc-yKs" secondAttribute="leadingMargin" id="oXS-DB-X8O"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="lha-87-UOa" id="USb-Y3-Fh7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ght-YT-zFd" id="DpP-hS-p4T"/>
+                            <outlet property="delegate" destination="ght-YT-zFd" id="NtH-YM-Nz1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmG-06-gh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3086.9565217391305" y="421.46739130434787"/>
+        </scene>
+        <!--Save Picture-->
+        <scene sceneID="r5H-90-9g4">
+            <objects>
+                <viewController id="P1h-ID-zsO" customClass="AttachPhotoViewController" customModule="myHSC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L2U-OG-KFp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ztk-om-zjo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Save Picture" id="L8m-zN-uxP" userLabel="Block A Click"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCP-yA-NZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZDq-tX-9Vo"/>
+            </objects>
+            <point key="canvasLocation" x="3096" y="-246"/>
+        </scene>
+        <!--View Picture-->
+        <scene sceneID="8QR-19-2nl">
+            <objects>
+                <viewController storyboardIdentifier="viewPicture" id="D6T-Ug-OuX" customClass="ViewPictureVC" customModule="myHSC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wm4-lR-oFh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8dZ-nI-4YJ">
+                                <rect key="frame" x="0.0" y="70" width="414" height="553"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="553" id="3SH-LU-OXp"/>
+                                    <constraint firstAttribute="width" constant="414" id="iHv-SV-nkW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of Lesson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8D-YS-1LT">
+                                <rect key="frame" x="20" y="20" width="301" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="rKz-vu-73V"/>
+                                    <constraint firstAttribute="width" constant="301" id="vaF-ta-Yzt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8dZ-nI-4YJ" firstAttribute="leading" secondItem="BtN-Am-rsQ" secondAttribute="leading" id="Hjs-cc-c74"/>
+                            <constraint firstItem="8dZ-nI-4YJ" firstAttribute="trailing" secondItem="BtN-Am-rsQ" secondAttribute="trailing" id="OQg-UX-UDU"/>
+                            <constraint firstItem="p8D-YS-1LT" firstAttribute="top" secondItem="BtN-Am-rsQ" secondAttribute="top" constant="20" id="Pom-Fs-wLo"/>
+                            <constraint firstItem="8dZ-nI-4YJ" firstAttribute="top" secondItem="p8D-YS-1LT" secondAttribute="bottom" constant="24" id="QEW-OU-etp"/>
+                            <constraint firstItem="p8D-YS-1LT" firstAttribute="leading" secondItem="BtN-Am-rsQ" secondAttribute="leading" constant="20" id="fJd-yq-OFi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BtN-Am-rsQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Picture" id="KlX-6U-Cbj" userLabel="Block A Click"/>
+                    <connections>
+                        <outlet property="imageviewer" destination="8dZ-nI-4YJ" id="Fkq-bS-Ns7"/>
+                        <outlet property="titleLabel" destination="p8D-YS-1LT" id="4mL-V1-e9J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="42I-ek-Lx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="40h-SY-FV0"/>
+            </objects>
+            <point key="canvasLocation" x="3734.7826086956525" y="425.54347826086962"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseline_assignment_white_48pt" width="48" height="48"/>
+    </resources>
+</document>
