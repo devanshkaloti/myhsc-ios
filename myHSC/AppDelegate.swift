@@ -13,22 +13,6 @@ import Firebase
 import UserNotifications
 import Flurry_iOS_SDK
 
-
-// Hey Devansh in Future
-// Note for myself:
-// The secret file for APN service is located in devansh@dksources.com email
-// Devansh - From Past
-
-// Note to Ms. Hideg
-// I studied OOP in Swift and I learned:
-// By default, everything has access-control "Internal"
-// This means files within the same module can have access to it
-// This makes sense as long as it's nothing private such as password.
-// I've adopted to use mostly the default access control "Internal" except rare places.
-// Devansh - From Past
-
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
